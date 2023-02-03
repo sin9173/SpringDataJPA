@@ -25,6 +25,11 @@ dependencies {
 	runtimeOnly 'com.mysql:mysql-connector-j'
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+	// SQL 문을 파라미터와 같이 깔끔하게 출력해줌
+	// https://mvnrepository.com/artifact/com.github.gavlyukovskiy/p6spy-spring-boot-starter
+	implementation 'com.github.gavlyukovskiy:p6spy-spring-boot-starter:1.8.0'
+
 }
 
 tasks.named('test') {
